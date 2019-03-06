@@ -3,10 +3,11 @@
 	<head>
 		<title>Patrimoine-64</title>
 		<script src="jquery/jquery.min.js"></script>
+		<script src="jquery/popper.js"></script>
+		<script src="js/bootstrap.js"></script>
 		<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-min-css">
 		<link href="test.css" rel="stylesheet" id="test-css">
 		<link rel="SHORTCUT ICON" href="images/logo.png">
-		<script src="js/bootstrap.min.js"></script>
 		<style type="text/css">
 			@font-face
 				{
@@ -45,17 +46,31 @@
 			    </div>
 			    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
 			</div>
-		    <div class="row">
 		        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		            <nav>
-		                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-		                    <a class="nav-item nav-link active" id="nav-accueil-tab" data-toggle="tab" href="#nav-accueil" role="tab" aria-controls="nav-accueil" aria-selected="true">Accueil</a>
-		                    <a class="nav-item nav-link" id="nav-prestations-tab" data-toggle="tab" href="#nav-prestations" role="tab" aria-controls="nav-prestations" aria-selected="false">Prestations</a>
-		                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
-		                    <a class="nav-item nav-link" id="nav-mentionlegales-tab" data-toggle="tab" href="#nav-mentionlegales" role="tab" aria-controls="nav-mentionlegales" aria-selected="false">Mentions légales</a>
+		                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="nav-tab" role="tablist">
+		                	<ul class="nav-list nav nav-tabs nav-fill">
+		                		<li class="horiz-list">
+		                			<a class="nav-link nav-item active" id="nav-accueil-tab" data-toggle="tab" href="#nav-accueil" role="tab" aria-controls="nav-accueil" aria-selected="true">Accueil</a>
+		                		</li>
+		                		<li class="horiz-list dropdown ">
+		                			<a class="nav-link nav-item dropdown-toggle" id="nav-prestations-tab" data-toggle="dropdown" href="#" role="button" aria-controls="nav-prestations" aria-haspopup="true" aria-expanded="false"">Prestations</a>
+		                			<div class="dropdown-menu dropdown-style" aria-labelledby="nav-prestations-tab">
+							            <a class="nav-link nav-item dropdown-item" id="nav-conseil-tab" data-toggle="tab" href="#nav-conseil" aria-controls="nav-conseil">Conseil</a>
+							      		<a class="nav-link nav-item dropdown-item" id="nav-courtage-tab" data-toggle="tab" href="#nav-courtage" aria-controls="nav-courtage">Courtage</a>
+							       		<a class="nav-link nav-item dropdown-item" id="nav-formation-tab" data-toggle="tab" href="#nav-formation" aria-controls="nav-formation">Formation</a>
+							        </div>
+		                		</li>
+		                		<li class="horiz-list">
+		                			<a class="nav-link nav-item" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+		                		</li>
+		                		<li class="horiz-list">
+		                			<a class="nav-link nav-item" id="nav-mentionlegales-tab" data-toggle="tab" href="#nav-mentionlegales" role="tab" aria-controls="nav-mentionlegales" aria-selected="false">Mentions légales</a>
+		                		</li>
+		                	</ul>
 		                </div>
 		            </nav>
-		            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+		            <div class="tab-content" id="nav-tabContent">
 		                <div class="tab-pane fade show active" id="nav-accueil" role="tabpanel" aria-labelledby="nav-accueil-tab">
 		                	<h1 class="text-center copper">La société</h1>
 			                <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
@@ -106,8 +121,17 @@
 				                </div>
 				            </div>
 		                </div>
-		    	        <div class="tab-pane fade" id="nav-prestations" role="tabpanel" aria-labelledby="nav-prestations-tab">
-		        	        To be completed
+		    	        <div class="tab-pane fade" id="nav-conseil" role="tabpanel" aria-labelledby="nav-conseil-tab">
+		        	        <h1 class="text-center copper">Prestations en Conseil</h1>
+		                    <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+		                </div>
+		                <div class="tab-pane fade" id="nav-courtage" role="tabpanel" aria-labelledby="nav-courtage-tab">
+		        	        <h1 class="text-center copper">Prestations en Courtage</h1>
+		                    <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+		                </div>
+		                <div class="tab-pane fade" id="nav-formation" role="tabpanel" aria-labelledby="nav-formation-tab">
+		        	        <h1 class="text-center copper">Prestations en Formation</h1>
+		                    <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
 		                </div>
 		                <div class="tab-pane fade text-center" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
 		                	<h1 class="copper">Adresse Postale</h1>
@@ -220,9 +244,14 @@
 							La dernière mise à jour des mentions légales a été effectuée le 20 octobre 2007.
 		                </div>
 		            </div>
-		               
-		        </div>
-		    </div>
+		    	</div>
 		</div>
+		<script type="text/javascript">
+			$('.nav-link').on('shown.bs.tab','a', function (e) {
+			    if (e.relatedTarget) {
+			        $(e.relatedTarget).removeClass('active');
+			    }
+			})
+		</script>
 	</body>
 </html>
