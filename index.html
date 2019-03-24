@@ -1,257 +1,393 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Patrimoine-64</title>
-		<script src="jquery/jquery.min.js"></script>
-		<script src="jquery/popper.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-min-css">
-		<link href="test.css" rel="stylesheet" id="test-css">
-		<link rel="SHORTCUT ICON" href="images/logo.png">
-		<style type="text/css">
-			@font-face
-				{
-				font-family: "Copperplate";
-    			src: url("fonts/CopperplateT-Medium.otf");
-				}
-			.copper
-				{
-					font-family: "Copperplate";
-				}
-			.text1
-	  			{
-		   		color:#fff;
-		   		font-weight: bold;
-		    	font-size: 200;
-		    	text-align: center;
-  				}
-			body
-			    {
-			    width: 100%;
-			    height: 100%;
-			    margin: 0;
-			    background: url("images/montagne.jpg");
-			    background-repeat: no-repeat;
-			    background-size: cover;
-			    }
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<div class=" text-center row">
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img src="images/logo.png"></div>
-				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-			    		<h1 class="text1 copper">AUDIT PATRIMOINE COURTAGE</h1>
-			    </div>
-			    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-			</div>
-		        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		            <nav>
-		                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="nav-tab" role="tablist">
-		                	<ul class="nav-list nav nav-tabs nav-fill">
-		                		<li class="horiz-list">
-		                			<a class="nav-link nav-item active" id="nav-accueil-tab" data-toggle="tab" href="#nav-accueil" role="tab" aria-controls="nav-accueil" aria-selected="true">Accueil</a>
-		                		</li>
-		                		<li class="horiz-list dropdown ">
-		                			<a class="nav-link nav-item dropdown-toggle" id="nav-prestations-tab" data-toggle="dropdown" href="#" role="button" aria-controls="nav-prestations" aria-haspopup="true" aria-expanded="false"">Prestations</a>
-		                			<div class="dropdown-menu dropdown-style" aria-labelledby="nav-prestations-tab">
-							            <a class="nav-link nav-item dropdown-item" id="nav-conseil-tab" data-toggle="tab" href="#nav-conseil" aria-controls="nav-conseil">Conseil</a>
-							      		<a class="nav-link nav-item dropdown-item" id="nav-courtage-tab" data-toggle="tab" href="#nav-courtage" aria-controls="nav-courtage">Courtage</a>
-							       		<a class="nav-link nav-item dropdown-item" id="nav-formation-tab" data-toggle="tab" href="#nav-formation" aria-controls="nav-formation">Formation</a>
-							        </div>
-		                		</li>
-		                		<li class="horiz-list">
-		                			<a class="nav-link nav-item" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
-		                		</li>
-		                		<li class="horiz-list">
-		                			<a class="nav-link nav-item" id="nav-mentionlegales-tab" data-toggle="tab" href="#nav-mentionlegales" role="tab" aria-controls="nav-mentionlegales" aria-selected="false">Mentions légales</a>
-		                		</li>
-		                	</ul>
-		                </div>
-		            </nav>
-		            <div class="tab-content" id="nav-tabContent">
-		                <div class="tab-pane fade show active" id="nav-accueil" role="tabpanel" aria-labelledby="nav-accueil-tab">
-		                	<h1 class="text-center copper">La société</h1>
-			                <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-							<div class="container">
-								<div class="row"> 
-			                		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
-									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-										Cabinet de gestion de patrimoine crée en 1997, nous avons développé les spécialités suivantes :
-										<ul>
-										   	<li><b>Courtage de produits d’assurance vie, décès et de contrats de capitalisation.</b></li>
-										   	<li><b>Conseils patrimoniaux dédiés aux chefs d’entreprise.</b></li>
-										</ul>
-									</div>
-			                	</div>
-							</div>
-
-
-			                <h1 class="text-center copper">L’équipe</h1>
-			                <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-			                <div class="container">
-			                	<div class="row"> 
-			                		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-				                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-				                        <h4 class="copper">HUGUES COUTRAY DE PRADEL</h4>
-				                        <ul>
-				                            <li>Consultant en gestion de patrimoine</li>
-				                            <li>Formateur pour l’ordre des experts comptables</li>
-				                            <li>Associé gérant</li>
-				                        </ul>    
-				                        Double compétence : D.E.S. Gestion de patrimoine et D.U. Ingenierie patrimoniale du chef d’entreprise.
-				                        <div  class="text-center">
-				                            <img src="images/hugues.jpg" alt="gestion patrimoine" style="border:0" />
-				                        </div>    
-				                    </div>
-				                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-				                        <h4  class="copper">NATHALIE JAMET</h4>
-				                        <ul>
-				                            <li>Responsable du suivi administratif des clients </li>
-				                            <li>Associée</li>
-				                        </ul>    
-				                             <br />Formation économique et commerciale.<br />
-										     Ancienne sportive de haut niveau.
-				                        <div  class="text-center">
-				                            <img src="images/nathalie.jpg" alt="gestion patrimoine" style="border:0" />
-				                        </div>    
-				                    </div>
-				                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>                                           
-				                </div>
-				            </div>
-		                </div>
-		    	        <div class="tab-pane fade" id="nav-conseil" role="tabpanel" aria-labelledby="nav-conseil-tab">
-		        	        <h1 class="text-center copper">Prestations en Conseil</h1>
-		                    <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-		                </div>
-		                <div class="tab-pane fade" id="nav-courtage" role="tabpanel" aria-labelledby="nav-courtage-tab">
-		        	        <h1 class="text-center copper">Prestations en Courtage</h1>
-		                    <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-		                </div>
-		                <div class="tab-pane fade" id="nav-formation" role="tabpanel" aria-labelledby="nav-formation-tab">
-		        	        <h1 class="text-center copper">Prestations en Formation</h1>
-		                    <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-		                </div>
-		                <div class="tab-pane fade text-center" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-		                	<h1 class="copper">Adresse Postale</h1>
-							<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-		                    <p class="text-center" style="font-weight: bold">
-		                    	AUDIT PATRIMOINE & COURTAGE<br />
-		                    	26 route d’Ossau<br />
-								64800 ASSON<br />
-		                    </p>
-							<h1 class="copper">Numéros</h1>
-							<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-							<p class="text-center" style="font-weight: bold">
-							Tel : 05 59 92 97 43<br />
-							Fax : 01 34 29 22 73<br />
-							Port. : 06 08 06 81 80<br /><br />
-							</p>
-							<p>
-							SIRET 41320041100036<br />
-							N°TVA : FR27413200411<br />
-							Société de courtage d’assurance<br />
-							N°ORIAS:07008435<br />
-							</p>
-		                </div>
-		                <div class="tab-pane fade text-center" id="nav-mentionlegales" role="tabpanel" aria-labelledby="nav-mentionlegales-tab">
-		                    <h1 class="copper">Contact</h1>
-		                    <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-							AUDIT PATRIMOINE ET COURTAGE<br />
-							26, Route d’Ossau<br />
-							La Châtaigneraie<br />
-							F – 64800 ASSON<br />
-							<br />
-							RCS Pau  413 200 411 00036 – APE 672Z - N° Intracommunautaire FR 27 413 200 411<br />
-							Société à Responsabilité Limitée au capital de 8.537,14 euros<br />
-							<br />
-							Responsable de la publication : Hugues COUTRAY DE PRADEL, en sa qualité de gérant<br />
-							<br />
-							Audit Patrimoine et Courtage est courtier en assurances : garantie financière et RC professionnelle article L530-1 et L 530-2 du code des Assurances.<br />
-							<br />
-							<h1 class="copper">Hébergeur du site</h1>
-							<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-							OVH<br />
-							SAS au capital de 500 k€ RCS Roubaix – Tourcoing 424 761 419<br />
-							Siège social : 140 Quai du Sartel  F-59100 Roubaix <br />
-							<br />
-							<h1 class="copper">Déclaration CNIL</h1>
-							<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-							Le présent site est soumis au respect de la loi française dit « Informatique et Libertés » du 06 janvier 1978.<br />
-							<br />
-							Il a fait l’objet d’une déclaration préalable auprès de la Commission Nationale de l’Informatique et des Libertés (C.N.I.L.) enregistrée sous le numéro 1258117.<br />
-							<br />
-							<br />
-							Audit patrimoine et Courtage est une société de <b>courtage d’assurance des personnes</b>.<br />
-							<br />
-							Elle est inscrite à ce titre au registre de l’O.R.I.A.S sous le N°07008435. Pour accéder au fichier des intermédiaires en Assurance  vous pouvez vous connecter sur  www.orias.fr<br />
-							<br />
-							Cette activité est couverte en Responsabilité  Civile Professionnelle par le <b>volet E du contrat N°2 400 250</b> souscrit par l’intermédiaire de l’A.N.C.D.G.P. auprès de <b>AIG Europe</b> ( Tour AIG, 92079 PARIS La Défense Cedex – téléphone 01 49 02 42 22 – Télécopie 01 49 02 44 04 ).<br />
-							<br />
-							Cette activité est couverte en <b>Garantie Financière</b> par le <b>contrat N°18 330</b> souscrit par l’intermédiaire de l’A.N.C.D.G.P. auprès de <b>Le Mans Caution Sa</b> ( 34 Place de la République – 72013 LE MANS Cedex 02 – téléphone 02 43 41 72 72 – Télécopie 02 43 41 61 71 ).<br />
-							<br />
-							<br />
-							Audit patrimoine et Courtage est une société qui pratique régulièrement <b>le conseil en gestion de patrimoine</b>, cette compétence lui est acquise dans le cadre de la Compétence Juridique Appropriée (CJA), son gérant et consultant Hugues COUTRAY de PRADEL étant diplômé du D.E.S. de gestion de patrimoine de l’Université de Clermont-Ferrand. <br />
-							<br />
-							Cette activité est couverte en Responsabilité  Civile Professionnelle par <b>le volet G du contrat N°2 400 250</b> souscrit par l’intermédiaire de l’ANCDGP auprès de <b>AIG Europe</b> ( Tour AIG, 92079 PARIS La Défense Cedex – téléphone 01 49 02 42 22 – Télécopie 01 49 02 44 04 ).<br />
-							<br />
-							<br />
-							Audit patrimoine et Courtage est une société qui pratique le <b>démarchage bancaire et financier</b>, elle est inscrite pour cette activité sur le fichier des démarcheurs de l’AMF sous le <b>n°2051993518VB</b> . Pour accéder au fichier des démarcheurs vous pouvez vous connecter sur : https://www.demarcheurs-financiers.fr/index.php<br />
-							<br />
-							Au 01/09/2007 des mandats sont en cours de validité avec :<br />
-                            Cortal Consors<br />
-                            ERES SASA<br />
-                            INOCAP<br />
-                            <br />
-                            Cette activité est couverte en Responsabilité  Civile Professionnelle <b>par les volets C et D du contrat N°2 400 250</b> souscrit par l’intermédiaire de l’A.N.C.D.G.P. auprès de <b>AIG Europe</b> ( Tour AIG, 92079 PARIS La Défense Cedex – téléphone 01 49 02 42 22 – Télécopie 01 49 02 44 04).<br />
-                            <br />
-                            Evolutions règlementaires :<br />
-                            <br />
-                            Le 01/09/2008 une demande d’agrément est en cours pour l’exercice de la profession de Conseil en Investissement Financier (CIF). Cette demande est présentée à l’ANACOFI, cette demande devrait mentionlegalesir dans le courant du 4ème trimestre 2008.
-							<p>
-							Audit Patrimoine et Courtage est destinataire de données personnelles mais peut être amenée à les transmettre à des tiers tels que des partenaires commerciaux.  <br />
-							<br />
-							Vous pouvez vous opposer à ce transfert en manifestant votre refus auprès de notre contact.<br />
-							<br />
-							Conformément à la loi Informatique et Libertés modifiée, l’utilisateur dispose d’un droit d’accès, de modification, de rectification et de suppression de ces données dans les conditions de l’article 34 de ladite loi. <br />
-							<br />
-							Pour l’exercer, l’utilisateur peut adresser un courrier électronique à contact@patrimoine-64.fr ou un courrier à Audit Patrimoine et Courtage, 26, Route d’Ossau, La Châtaigneraie 64800 ASSON en mentionnant son nom ou sa raison sociale ainsi que ses coordonnées physiques.
-							</p>
-							<p>
-							Audit Patrimoine et Courtage rappelle que le code secret est strictement personnel et qu’il ne doit en aucun cas être communiqué à un tiers. 
-							</p>
-							<h1 class="copper">Informations du site</h1>
-							<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-							Les informations diffusées sur www.patrimoine-64.fr le sont à titre informatif. Audit Patrimoine et Courtage ainsi que ses partenaires ne sauraient être tenus responsables pour toute utilisation ayant occasionné un préjudice direct ou indirect et notamment une perte financière. Les recommandations et conseils financiers sont émis par des professionnels de la Finance, Audit Patrimoine et Courtage ne peut cependant garantir l’exhaustivité ou l’absence d’erreurs ou retards dans la transmission de ces données et informations. Audit Patrimoine et Courtage décline toute responsabilité, malgré le soin apporté à sa réalisation, quant au contenu, à la fiabilité, à la précision, à la pertinence des informations et données diffusées sur son site.<br />
-							<br />
-							Audit Patrimoine et Courtage se réserve le droit de modifier ou corriger à tout moment les informations présentes sur le site sans avertissement préalable.<br />
-							<br />
-							<b>Les Performances passées ne sauraient préjuger des performances futures et sont soumises aux fluctuations des marchés financiers à la hausse ou à la baisse</b>.<br />
-							<br />
-							<h1 class="copper">Responsabilité</h1>
-							<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-							Les liens hypertextes mis en place dans le cadre du présent site en direction d’autres sites ou de ressources présentes sur le réseau Internet ne sauraient engager la responsabilité de l’éditeur du site, notamment à raison des prestations proposées par les sites désignés.<br />
-							<br />
-							<h1 class="copper">Copyright</h1>
-							<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-							L'ensemble des contenus et informations présents sur ce site Internet sont la propriété exclusive d’Audit Patrimoine et Courtage, et sont protégés par la législation sur les droits d'auteur.<br />
-							<br />
-							La reproduction de tout ou partie de ce site, ainsi que toute utilisation du contenu du site, autre que la consultation individuelle et privée sont formellement interdites sauf autorisation expresse d’Audit Patrimoine et Courtage.<br />
-							<br />
-							<h1 class="copper">Mise à jour</h1>
-							<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
-							La dernière mise à jour des mentions légales a été effectuée le 20 octobre 2007.
-		                </div>
-		            </div>
-		    	</div>
+<head>
+	<title>Patrimoine-64</title>
+	<script src="jquery/jquery.min.js"></script>
+	<script src="jquery/jquery-ui.min.js"></script>
+	<script src="jquery/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/flowtype.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-min-css">
+	<link href="global.css" rel="stylesheet" id="global-css">
+	<link rel="SHORTCUT ICON" href="images/logo.png">
+	<style type="text/css">
+		body
+	    {
+	    width: 100%;
+	    height: 100%;
+	    margin: 0;
+	    background: url("images/montagne.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+		}
+	</style>	
+</head>
+<body>
+	<div id="overlay" class="container offset-md-1 offset-sm-1 offset-xs-1 offset-lg-1 col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
+		<div class=" text-center row">
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img src="images/logo.png"></div>
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+		    		<h1 class="text1">AUDIT PATRIMOINE COURTAGE</h1>
+		    </div>
+		    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
 		</div>
-		<script type="text/javascript">
-			$('.nav-link').on('shown.bs.tab','a', function (e) {
-			    if (e.relatedTarget) {
-			        $(e.relatedTarget).removeClass('active');
-			    }
-			})
-		</script>
-	</body>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        	<script type="text/javascript">
+		    	$(document).ready(function(){
+				    var hash = window.location.hash;
+				    if (hash !='') {
+				        $('.nav-tabs a[href="' + hash + '"]').tab('show');
+				    }
+				});
+			</script>
+			<nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="nav-tab" role="tablist">
+				<ul class="nav-list nav nav-tabs nav-fill">
+					<li class="horiz-list">
+						<a class="nav-link nav-item active" id="nav-accueil-tab" data-toggle="tab" href="#nav-accueil" role="tab" aria-controls="nav-accueil" aria-selected="true">Accueil</a>
+					</li>
+					<li class="horiz-list">
+						<a class="nav-link nav-item" id="nav-va-tab" data-toggle="tab" href="#nav-va" role="tab" aria-controls="nav-va" aria-selected="false">Valeur ajoutée</a>
+					</li>
+					<li class="horiz-list dropdown">
+						<a class="nav-link nav-item dropdown-toggle" id="nav-prestations-tab" data-toggle="dropdown" href="#" role="button" aria-controls="nav-prestations" aria-haspopup="true" aria-expanded="false">Prestations</a>
+						<div class="dropdown-menu dropdown-style" aria-labelledby="nav-prestations-tab">
+				            <a class="nav-link nav-item dropdown-item" id="nav-conseil-tab" data-toggle="tab" href="#nav-conseil" aria-controls="nav-conseil">Conseil</a>
+				      		<a class="nav-link nav-item dropdown-item" id="nav-courtage-tab" data-toggle="tab" href="#nav-courtage" aria-controls="nav-courtage">Courtage</a>
+				       		<a class="nav-link nav-item dropdown-item" id="nav-formation-tab" data-toggle="tab" href="#nav-formation" aria-controls="nav-formation">Formation</a>
+				        </div>
+					</li>
+					<li class="horiz-list">
+						<a class="nav-link nav-item" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+					</li>
+					<li class="horiz-list">
+						<a class="nav-link nav-item" id="nav-mentionlegales-tab" data-toggle="tab" href="#nav-mentionlegales" role="tab" aria-controls="nav-mentionlegales" aria-selected="false">Mentions légales</a>
+					</li>
+				</ul>
+			    <script type="text/javascript">
+					$('.nav-link').on('shown.bs.tab','a', function (e) {
+					    if (e.relatedTarget) {
+					        $(e.relatedTarget).removeClass('active');
+					    }
+					})
+				</script>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+			    <div class="tab-pane fade show active" id="nav-accueil" role="tabpanel" aria-labelledby="nav-accueil-tab">
+			    	<h1 class="text-center copper">La société</h1>
+			        <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+					<div class="container">
+						<div class="row"> 
+			        		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								Cabinet de gestion de patrimoine crée en 1997, nous avons développé les spécialités suivantes :
+								<ul>
+								   	<li><b>Courtage de produits d’assurance vie, décès et de contrats de capitalisation.</b></li>
+								   	<li><b>Conseils patrimoniaux dédiés aux chefs d’entreprise.</b></li>
+								</ul>
+							</div>
+			        	</div>
+					</div>
+			        <h1 class="text-center copper">L’équipe</h1>
+			        <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+			        <div class="container">
+			        	<div class="row"> 
+			                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			                    <h4 class=" text-center copper">HUGUES<br/>COUTRAY DE PRADEL</h4>
+			                    <br/>
+			                    <ul style="padding-left: 18%">
+			                        <li>Consultant en gestion de patrimoine</li>
+			                        <li>Formateur pour l’ordre des experts comptables</li>
+			                        <li>Associé gérant</li>
+			                    </ul>  
+			                    <div  class="text-center">  
+			                    D.E.S. Gestion de patrimoine <br/>D.U. Ingenierie patrimoniale du chef d’entreprise.<br/>
+			                   
+			                        <img src="images/hugues.jpg" alt="gestion patrimoine" style="border:0" />
+			                    </div>    
+			                </div>
+			                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			                    <h4  class="text-center copper">NATHALIE<br/>JAMET</h4>
+			                    <br/>
+			                    <ul style="padding-left: 18%">
+			                        <li>Responsable du suivi administratif des clients </li>
+			                        <li>Associée</li>
+			                    </ul>   
+			                    <div  class="text-center"> 
+			                         <br />Formation économique et commerciale.<br />
+								     Ancienne sportive de haut niveau.<br/>
+			                        <img src="images/nathalie.jpg" alt="gestion patrimoine" style="border:0" />
+			                    </div>    
+			                </div>                                         
+			            </div>
+			        </div>
+			    </div>
+			    <div class="tab-pane fade " id="nav-va" role="tabpanel" aria-labelledby="nav-va-tab">
+			    	<h1 class="text-center copper">Notre valeur ajoutée en quatre points</h1>
+			        <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+			    </div>
+			    <div class="tab-pane fade" id="nav-conseil" role="tabpanel" aria-labelledby="nav-conseil-tab">
+			        <h1 class="text-center copper">Prestations en Conseil</h1>
+			        <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+			    </div>
+			    <div class="tab-pane fade" id="nav-courtage" role="tabpanel" aria-labelledby="nav-courtage-tab">
+			        <h1 class="text-center copper">Prestations en Courtage</h1>
+			        <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+			    </div>
+			    <div class="tab-pane fade" id="nav-formation" role="tabpanel" aria-labelledby="nav-formation-tab">
+			        <h1 class="text-center copper">Prestations en Formation</h1>
+			        <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+			    </div>
+			    <div class="tab-pane fade text-center" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+			    	<h1 class="copper">Envoyez-nous un message</h1>
+					<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+					<form action="process_mail.php" method="post">
+						<div class="form-group row">
+			                <label for="civilite" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label text-md-right text-xs-right text-sm-right text-lg-right">Civilité</label>
+			                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			                    <select type="text" id="civilite" class="form-control" name="civilite" required autofocus>
+			                    	<option>Mr.</option>
+			                    	<option>Mme.</option>
+			                    	<option>Mlle.</option>
+			                    </select>
+			                </div>
+			            </div>
+			            <div class="form-group row">
+			                <label for="nom" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label text-md-right text-xs-right text-sm-right text-lg-right">Nom</label>
+			                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			                    <input type="text" id="nom" class="form-control" name="nom" required>
+			                </div>
+			            </div>
+			            <div class="form-group row">
+			                <label for="prenom" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label text-md-right text-xs-right text-sm-right text-lg-right">Prénom</label>
+			                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			                    <input type="text" id="prenom" class="form-control" name="prenom" required>
+			                </div>
+			            </div>
+			            <div class="form-group row">
+			                <label for="telephone" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label text-md-right text-xs-right text-sm-right text-lg-right">Téléphone</label>
+			                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			                    <input type="text" id="telephone" class="form-control" name="telephone" required>
+			                </div>
+			            </div>
+			            <div class="form-group row">
+			                <label for="email_address" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label text-md-right text-xs-right text-sm-right text-lg-right">Votre Mail</label>
+			                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			                    <input type="text" id="email_address" class="form-control" name="email-address" required>
+			                </div>
+			            </div>
+			            <div class="form-group row">
+			                <label for="objet" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label text-md-right text-xs-right text-sm-right text-lg-right">Objet</label>
+			                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			                    <input type="text" id="objet" class="form-control" name="objet" required>
+			                </div>
+			            </div>
+			            <div class="form-group row">
+			                <label for="message" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label text-md-right text-xs-right text-sm-right text-lg-right">Message</label>
+			                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			                    <textarea id="message" class="form-control" name="message" rows="10" placeholder="Veuillez écrire votre message ici..." required></textarea>
+			                </div>
+			            </div>
+			            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 offset-md-5 offset-sm-5 offset-xs-5 offset-lg-5">
+			                <input type="submit" class="btn btn-primary" value="Envoyer" style="width: 100%"></input>
+			            </div>
+			    	</form>
+			    	<div><br/></div>
+			    	<h1 class="copper">Coordonnées</h1>
+					<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+					<div class="row">
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 offset-lg-1 offset-sm-1 offset-xs-1 offset-md-1">
+							<div class="row">
+								<div class="text-center" style="top: 0;"><img src="images/lieu.jpg" alt="gestion patrimoine" style="border:0"></div>
+					        	<div class="text-left div-coord">
+							        <p style="font-weight: bold">
+							        	AUDIT PATRIMOINE &<br /> COURTAGE<br />
+							        	26 route d’Ossau<br />
+										64800 ASSON
+							        </p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="text-center" style="top: 0;"><img src="images/tel.jpg" alt="gestion patrimoine" style="border:0"></div>
+					        	<div class="text-left div-coord">
+							        <p style="font-weight: bold">
+									Tel : 05 59 92 97 43<br />
+									Fax : 01 34 29 22 73<br />
+									Port. : 06 08 06 81 80
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="text-center" style="top: 0;"><img src="images/mail.jpg" alt="gestion patrimoine" style="border:0"></div>
+					        	<div class="text-left div-coord">
+							        <p style="font-weight: bold">
+									contact@patrimoine-64.fr
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="text-left col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<iframe src="http://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.541773532069!2d-0.27545948513896473!3d43.135151393793265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd57ca587afa5c21%3A0x17dee25de580ca8e!2s26+Route+d&#39;Ossau%2C+64800+Asson!5e0!3m2!1sfr!2sfr!4v1553069437470" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<br/>
+					<h1 class="copper">Autres numéros</h1>
+					<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+					
+					<p>
+					SIRET 41320041100036<br />
+					N°TVA : FR27413200411<br />
+					Société de courtage d’assurance<br />
+					N°ORIAS:07008435<br />
+					</p>
+			    </div>
+			    <div class="tab-pane fade" id="nav-mentionlegales" role="tabpanel" aria-labelledby="nav-mentionlegales-tab">
+			        <h1 class="copper text-center">Contact</h1>
+			        <div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+			        <div class="text-center">
+				   	AUDIT PATRIMOINE ET COURTAGE<br />
+					26, Route d’Ossau<br />
+					La Châtaigneraie<br />
+					F – 64800 ASSON<br />
+					<br />
+					RCS Pau  413 200 411 00036 – APE 672Z - N° Intracommunautaire FR 27 413 200 411<br />
+					Société à Responsabilité Limitée au capital de 8.537,14 euros<br />
+					<br />
+					Responsable de la publication : Hugues COUTRAY DE PRADEL, en sa qualité de gérant<br />
+					<br />
+					Audit Patrimoine et Courtage est courtier en assurances : garantie financière et RC professionnelle article L530-1 et L 530-2 du code des Assurances.<br/>
+					<br />
+					</div>
+					<h1 class="copper text-center">Hébergeur du site</h1>
+					<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+					<div class="text-center">
+					OVH<br />
+					SAS au capital de 500 k€ RCS Roubaix – Tourcoing 424 761 419<br />
+					Siège social : 140 Quai du Sartel  F-59100 Roubaix <br />
+					<br />
+					</div>
+					<h1 class="copper text-center">Statuts Légaux et autorités de tutelle</h1>
+					<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+					<div class="text-justify">
+					Votre conseiller / ou intermédiaire est immatriculé au Registre Unique des Intermédiaires en Assurance, Banque et Finance (ORIAS) sous le N°07008435 au titre des activités suivantes (vous pouvez vérifier cette immatriculation à l’adresse suivante https://www.orias.fr/welcome):
+					Conseil en Investissements Financiers (C.I.F.) proposant des prestations de conseil non-indépendant au sens de l’article 325-5 du RGAMF enregistré auprès de l’Association Nationale des Conseils Financiers-CIF (ANACOFI-CIF). Association agrée par l’Autorité des Marchés Financiers (AMF) 17 place de la Bourse 75082 PARIS Cedex 02 site internet www.amfr-france.org; 
+					Démarcheur Financier : Il est enregistré auprès de l’Autorité des Marchés Financiers (AMF) sous les numéros: 2051993518VB et 1092670899XM 
+					IOBSP (Intermédiaire en Opérations de Banque et Services de Paiement) : Il est courtier, membre de l’Association Nationale des Conseils Financiers-IOBSP (ANACOFI-IOBSP).
+					IAS ( intermédiaire en assurance-courtier) : catégorie Courtier de type b), membre de l’Association Nationale des Conseils Financiers-ASSURANCES (ANACOFI-ASSURANCES).
+					Les activités d’IAS et d’IOBSP sont contrôlables par l’ACPR adresse courrier : 4 place de Budapest 75436 PARIS cedex 09 – site internet : http://www.acpr.banque-france.fr/accueil.html
+					</div>
+					<h1 class="copper text-center">Déclaration CNIL</h1>
+					<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+					<div class="text-justify">
+					Le présent site est soumis au respect de la loi française dit « Informatique et Libertés » du 06 janvier 1978.<br />
+					<br />
+					Il a fait l’objet d’une déclaration préalable auprès de la Commission Nationale de l’Informatique et des Libertés (C.N.I.L.) enregistrée sous le numéro 1258117.<br />
+					<br />
+					Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisé par M. Hugues COUTRAY DE PRADEL, responsable du traitement des données pour effectuer des opérations relatives à la gestion des clients. Les données collectées vous concernant vous et vos proches seront conservées pendant toute la durée de nos relations contractuelles et ensuite en archive pendant un délai de cinq (5) ans, à défaut des délais plus courts ou plus long spécialement prévus notamment en cas de litige. Vous disposez sur ces données d'un droit d'accès, de rectification, et limitation, ainsi que d'un droit d'opposition et de portabilité conformément à la loi. 
+					Si vous souhaitez exercer ces droits, vous pouvez contacter notre DPO à l'adresse contact@patrimoine-64.fr, ou par courrier à Audit Patrimoine et Courtage, 26, route d’Ossau La Châtaigneraie, 64800 ASSON. Vous disposez également du droit d'introduire une réclamation auprès de la CNIL.
+					<br />
+					<br />
+					Audit patrimoine et Courtage est une société de <b>courtage d’assurance des personnes</b>.<br />
+					<br />
+					Elle est inscrite à ce titre au registre de l’O.R.I.A.S sous le N°07008435. Pour accéder au fichier des intermédiaires en Assurance  vous pouvez vous connecter sur  www.orias.fr<br />
+					<br />
+					Cette activité est couverte en Responsabilité  Civile Professionnelle par le <b>volet E du contrat N°2 400 250</b> souscrit par l’intermédiaire de l’A.N.C.D.G.P. auprès de <b>AIG Europe</b> ( Tour AIG, 92079 PARIS La Défense Cedex – téléphone 01 49 02 42 22 – Télécopie 01 49 02 44 04 ).<br />
+					<br />
+					<br />
+					<br />
+					Audit patrimoine et Courtage est une société qui pratique régulièrement <b>le conseil en gestion de patrimoine</b>, cette compétence lui est acquise dans le cadre de la Compétence Juridique Appropriée (CJA), son gérant et consultant Hugues COUTRAY de PRADEL étant diplômé du D.E.S. de gestion de patrimoine de l’Université de Clermont-Ferrand. <br />
+					<br />
+					Audit Patrimoine et Courtage dispose, conformément à la loi et au code de bonne conduite de l’ANACOFI-CIF, d’une couverture en Responsabilité Civile Professionnelle et d’une Garantie Financière suffisantes couvrant ses diverses activités. Ces couvertures sont notamment conformes aux exigences du code monétaire et financier et du code des assurances. Numéros de polices : Oria Finance et Patrimoine 2.401.395/RD00022667T –OC100000174 Souscrites auprès de : AIG EUROPE LIMITED<br />
+					<br />
+					Audit patrimoine et Courtage est une société qui pratique le <b>démarchage bancaire et financier</b>, elle est inscrite pour cette activité sur le fichier des démarcheurs de l’AMF sous le <b>n°2051993518VB</b> <br />
+					<br />
+					Au 13/03/2019 des mandats sont en cours de validité avec :<br />
+			  
+			        ERES <br />
+			        INOCAP <br />
+					AXA Banque <br />
+			        <br />
+			        Cette activité est couverte en Responsabilité  Civile Professionnelle <b>par les volets C et D du contrat N°2 400 250</b> souscrit par l’intermédiaire de l’A.N.C.D.G.P. auprès de <b>AIG Europe</b> ( Tour AIG, 92079 PARIS La Défense Cedex – téléphone 01 49 02 42 22 – Télécopie 01 49 02 44 04).<br />
+			        <br />
+			       Mode facturation et de rémunération :<br />
+			        <br />
+					Tarif horaire des consultations hors facturation forfaitaire : 250€ TTC de l’heure.
+					Le client est informé que pour tout acte d’intermédiation, la société est rémunérée par la totalité des frais d’entrée déduction faite de la part acquise à la société qui l’autorise à commercialiser les produits, c’est la rémunération de l’acte de vente. 
+					Peuvent s’y’ajouter une fraction des frais de gestion qui est au maximum de  90% de ceux-ci, c’est la rémunération du suivi des comptes.
+					Au titre de l’accompagnement du client, une information plus précise sera fournie ultérieurement sur simple demande une fois connus les supports choisis par le client. 
+
+			        <p>
+					Audit Patrimoine et Courtage est destinataire de données personnelles mais peut être amenée à les transmettre à des tiers tels que des partenaires commerciaux.  <br />
+					<br />
+					Vous pouvez vous opposer à ce transfert en manifestant votre refus auprès de notre contact.<br />
+					<br />
+					Conformément à la loi Informatique et Libertés modifiée, l’utilisateur dispose d’un droit d’accès, de modification, de rectification et de suppression de ces données dans les conditions de l’article 34 de ladite loi. <br />
+					<br />
+					Pour l’exercer, l’utilisateur peut adresser un courrier électronique à contact@patrimoine-64.fr ou un courrier à Audit Patrimoine et Courtage, 26, Route d’Ossau, La Châtaigneraie 64800 ASSON en mentionnant son nom ou sa raison sociale ainsi que ses coordonnées physiques.
+					</p>
+					<p>
+					Audit Patrimoine et Courtage rappelle que le code secret est strictement personnel et qu’il ne doit en aucun cas être communiqué à un tiers. 
+					</p>
+					</div>
+					<h1 class="copper text-center">Traitement des réclamations</h1>
+					<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+					<div class="text-justify">
+					(Article 325-12-1 du RGAMF et Instruction AMF n° 2012-07 du 13/07/2012) <br />
+
+					Pour toute réclamation votre conseiller peut être contacté: <br />
+					<ul>
+						<li>Par courrier : 	Audit Patrimoine et Courtage, Service Réclamations, La Châtaigneraie, 64 800 ASSON</li>
+						<li>Par téléphone :	 06 08 06 81 80</li>
+						<li>Par mail :	contact@patrimoine-64.fr</li>
+					</ul>
+					Vous pouvez également saisir les médiateurs suivant :<br /> 
+					Médiateur compétent pour un litige avec une entreprise : Médiateur de l’Anacofi 92 rue d’Amsterdam 
+					75009 Paris <br /> Médiateurs compétents pour un litige avec un consommateur : Pour les activités d’assurance : Via son site : www.médiation-assurance.org
+					Par courrier : La médiation de l’Assurance – TAS 50110 – 75441 PARIS cedex09
+					Site internet : http://www.mediation-assuranceorg/Saisir+le+médiateur<br /><br />Médiateurs compétents pour un litige avec un consommateur :Pour les activités CIF :http://www.amf-france.org/Formulaires-et-declarations
+					Mme Marielle Cohen-Branche Médiateur de l'Autorité  des marchés financiers 17, place de la Bourse 75 082 Paris cedex 02
+					Site internet : http://www.amf-france.org/Le-mediateur-mode-d-emploi/Modes-de-saisine.html<br /><br />
+					Médiateurs compétents pour un litige avec un consommateur :Pour les activités IOBSP :Via son site : www.anm-conso.com/anacofi-iobsp
+					Par courrier : Médiation de la consommation  - ANM Conso- 62 rue Tiquetonne – 75002 PARIS
+					Site internet : http://www.anm-conso.com/anacofi-iobsp<br /><br /><br />
+					Votre Conseiller s’engage à traiter votre réclamation dans les délais suivants : 
+					- dix jours ouvrables maximum à compter de la réception de la réclamation, pour accuser réception, sauf si la réponse elle-même est apportée au client dans ce délai ; 
+					- deux mois maximum entre la date de réception de la réclamation et la date d’envoi de la réponse au client sauf survenance de circonstances particulières dûment justifiées ;
+					<br />
+					<br />
+					</div>
+					<h1 class="copper text-center">Informations du site</h1>
+					<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+					<div class="text-justify">
+					Les informations diffusées sur www.patrimoine-64.fr le sont à titre informatif. Audit Patrimoine et Courtage ainsi que ses partenaires ne sauraient être tenus responsables pour toute utilisation ayant occasionné un préjudice direct ou indirect et notamment une perte financière. Les recommandations et conseils financiers sont émis par des professionnels de la Finance, Audit Patrimoine et Courtage ne peut cependant garantir l’exhaustivité ou l’absence d’erreurs ou retards dans la transmission de ces données et informations. Audit Patrimoine et Courtage décline toute responsabilité, malgré le soin apporté à sa réalisation, quant au contenu, à la fiabilité, à la précision, à la pertinence des informations et données diffusées sur son site.<br />
+					<br />
+					Audit Patrimoine et Courtage se réserve le droit de modifier ou corriger à tout moment les informations présentes sur le site sans avertissement préalable.<br />
+					<br />
+					<b>Les Performances passées ne sauraient préjuger des performances futures et sont soumises aux fluctuations des marchés financiers à la hausse ou à la baisse</b>.<br />
+					<br />
+					</div>
+					<h1 class="copper text-center">Responsabilité</h1>
+					<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+					<div class="text-justify">
+					Les liens hypertextes mis en place dans le cadre du présent site en direction d’autres sites ou de ressources présentes sur le réseau Internet ne sauraient engager la responsabilité de l’éditeur du site, notamment à raison des prestations proposées par les sites désignés.<br />
+					<br />
+					</div>
+					<h1 class="copper text-center">Copyright</h1>
+					<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+					<div class="text-justify">
+					L'ensemble des contenus et informations présents sur ce site Internet sont la propriété exclusive d’Audit Patrimoine et Courtage, et sont protégés par la législation sur les droits d'auteur.<br />
+					<br />
+					La reproduction de tout ou partie de ce site, ainsi que toute utilisation du contenu du site, autre que la consultation individuelle et privée sont formellement interdites sauf autorisation expresse d’Audit Patrimoine et Courtage.<br />
+					<br />
+					</div>
+					<h1 class="copper text-center">Mise à jour</h1>
+					<div class="text-center"><img src="images/index_txt_b.jpg" alt="gestion patrimoine" style="border:0"></div>
+					<div class="text-center">
+					La dernière mise à jour des mentions légales a été effectuée le 13 mars 2019.
+					</div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
